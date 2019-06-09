@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <div class="practices container">
+        <div class="practices">
             <div class="title-container">
                 <h2>Practice Areas</h2>
             </div>

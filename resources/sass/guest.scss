@@ -7,7 +7,8 @@ body{
 
 .landing{
     .lys-nav{
-        box-shadow: 0 3px 6px rgba(0,0,0,0.01), 0 3px 6px rgba(0,0,0,0.01);
+        box-shadow: 0 3px 12px rgba(0,0,0,0.12), 0 3px 32px rgba(0,0,0,0.18);
+        background:#f5f5f5;
         .container{
             display:flex;
             justify-content:space-between;
@@ -37,7 +38,6 @@ body{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-
             display:flex;
             align-items:center;
             justify-content:center;
@@ -62,6 +62,10 @@ body{
 
                         margin-bottom:1em;
                         margin-top:-0.25em;
+                        i{
+                            font-size:1em;
+                            margin-right:0.45em;
+                        }
                     }
                     h4:hover{
                         color:#fff;
@@ -92,7 +96,7 @@ body{
             flex-direction: column;
             align-items:center;
             padding-top:5%;
-            min-height:100vh;
+            height:100vh;
             .title-container{
                 border-top: 1px solid $lys-color;
                 border-bottom: 1px solid $lys-color;
@@ -140,6 +144,72 @@ body{
                         }
                     }
                 }
+            }
+        }
+
+        .profile{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            padding-top:5%;
+            min-height:100vh;
+            background-image:url("../images/zwartevilt_@2X.jpg");
+            .title-container{
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                width:32em;
+                padding-top:0.5em;
+                padding-bottom:0.5em;
+                h2{
+                    color:#fff;
+                    font-family:"Noticia Text";
+                    text-align:center;
+                    text-transform: uppercase;
+                    letter-spacing:0.2em;
+                }
+            }
+            .content-container{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                padding-bottom:2.5em;
+                .spacing{
+                    margin-top:1.5em;
+                }
+                p{
+                    text-indent: 2.5em;
+                    color: rgb(242, 242, 242);
+                    text-align: justify;
+                    font-family:"Roboto";
+                    font-size: 1.2em;
+                    width:70%;
+                }
+            }
+        }
+    }
+
+    .footer{
+        background-image:url("../images/zwartevilt_@2X.jpg");
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding-top:1.5em;
+        padding-bottom:1.5em;
+        img{
+            width:15em;
+        }
+        .copyright{
+            margin-top:1.5em;
+            p{
+                color:#fff;
+                font-family:"Noticia Text";
+                text-align:center;
+                span{
+                    color:$lys-color;
+                }
+            }
+            .bot-text{
+                margin-top:-1em;
             }
         }
     }

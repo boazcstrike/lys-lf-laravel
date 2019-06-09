@@ -17,6 +17,13 @@
         </div>
     </nav>
     <router-view></router-view>
+    <div class="footer">
+        <img src="{{asset('images/white-logo-darker.png')}}">
+        <div class="copyright">
+            <p>{{ config('app.name') }}</p>
+            <p class="bot-text">Brewed by <span>Boaz Michael Sze</span></p>
+        </div>
+    </div>
 </div>
 
 @endsection
