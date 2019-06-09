@@ -10646,3 +10646,7 @@ a.text-dark:focus {
   }
 }
 
+.landing .navbar .logo {
+  width: 150px;
+}
+

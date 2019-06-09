@@ -1,0 +1,27 @@
+// Variables
+@import 'variables';
+
+.landing{
+    .lys-nav{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding-top:0.45em;
+            padding-bottom:0.45em;
+            .nav-links{
+                color:$lys-black;
+                text-transform: uppercase;
+                .logo{
+                    width:256px;
+                }
+            }
+            .nav-links:hover{
+                color:$lys-black-hover;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
