@@ -6,10 +6,13 @@
             </div>
             <div class="content-container">
                 <div class="practice-col">
-                    <PracticeComponent ></PracticeComponent>
+                    <PracticeComponent practiceName="Corporate" icon="briefcase"/>
+                    <PracticeComponent practiceName="Labor" />
+                    <PracticeComponent practiceName="Tax" />
                 </div>
                 <div class="practice-col">
-                    <PracticeComponent></PracticeComponent>
+                    <PracticeComponent practiceName="Intellectual Property" />
+                    <PracticeComponent practiceName="Civil and Criminal Litigation" />
                 </div>
             </div>
         </div>
@@ -21,7 +24,7 @@ import PracticeComponent from '../components/PracticeComponent'
 
     export default {
         components: {
-            PracticeComponent
+            PracticeComponent,
         }
     }
 </script>
