@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-    <link ref="icon" href="{{ asset('images/law.png')}}" type="image/png">
+    <link rel="icon" href="{{ asset('images/law.png')}}" type="image/png">
 </head>
 <body>
     @yield('content')
