@@ -96,7 +96,7 @@ body{
             flex-direction: column;
             align-items:center;
             padding-top:5%;
-            height:100vh;
+            min-height:100vh;
             .title-container{
                 border-top: 1px solid $lys-color;
                 border-bottom: 1px solid $lys-color;
@@ -145,6 +145,23 @@ body{
                     }
                 }
             }
+            .profile-content-container{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                padding-bottom:2.5em;
+                .spacing{
+                    margin-top:1.5em;
+                }
+                p{
+                    text-indent: 2.5em;
+                    color:$lys-black;
+                    text-align: justify;
+                    font-family:"Roboto";
+                    font-size: 1.2em;
+                    width:70%;
+                }
+            }
         }
 
         .profile{
@@ -154,6 +171,7 @@ body{
             padding-top:5%;
             min-height:100vh;
             background-image:url("../images/zwartevilt_@2X.jpg");
+            border-bottom:1px solid #fff;
             .title-container{
                 border-top: 1px solid #fff;
                 border-bottom: 1px solid #fff;
@@ -192,11 +210,12 @@ body{
         background-image:url("../images/zwartevilt_@2X.jpg");
         display:flex;
         align-items:center;
-        justify-content:center;
+        justify-content:space-around;
         padding-top:1.5em;
         padding-bottom:1.5em;
         img{
             width:15em;
+            margin-left:-5em;
         }
         .copyright{
             margin-top:1.5em;
@@ -208,7 +227,17 @@ body{
                     color:$lys-color;
                 }
             }
+            .phone{
+                letter-spacing:2px;
+            }
+            .email{
+                letter-spacing:1px;
+            }
+            .info{
+                font-size:1.2em;
+            }
             .bot-text{
+                font-size:0.8em;
                 margin-top:-1em;
             }
         }

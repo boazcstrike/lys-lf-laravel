@@ -1,10 +1,10 @@
 <template>
     <div class="content">
-        <div class="profile">
+        <div class="practices">
             <div class="title-container">
                 <h2>Business Profile</h2>
             </div>
-            <div class="content-container container">
+            <div class="profile-content-container container">
                 <p class="spacing">The Lim & Yutatco-Sze Law Firm (LYS) is a full-service law office established in 2015. It is engaged in diversified practice of law primarily focusing in corporate, labor and and tax laws. The Firm likewise represents both corporate and individual clients in different courts and administrative agencies in the country.</p>
 
                 <p>The partners and lawyers of LYS are graduates of one of the country’s reputable law schools. LYS’s founding partners, Mr. Juanito R. Lim, Jr. and Ms. Gloriosa Yutatco-Sze, received their law degrees from the San Beda College of Law-Manila. Apart from being lawyers, Mr. Lim is a registered civil engineer while Ms. Yutatco-Sze is a certified public accountant.</p>
