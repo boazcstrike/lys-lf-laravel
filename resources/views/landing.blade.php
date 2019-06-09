@@ -5,11 +5,11 @@
 <div class="landing" id="app">
     <nav class="lys-nav">
         <div class="container">
-            <router-link class="nav-links" to="/">
+            <router-link class="nav-links logo-container" to="/">
                 <img class="logo" src="{{ asset('images/lys-logo.png') }}">
             </router-link>
             
-            <router-link class="nav-links" to="/practice">Practice Areas</router-link>
+            <router-link class="nav-links spacing" to="/practice">Practice Areas</router-link>
             <router-link class="nav-links" to="/profile">Profile</router-link>
             <router-link class="nav-links" to="/articles">News</router-link>
             <router-link class="nav-links" to="/team">Our Team</router-link>
