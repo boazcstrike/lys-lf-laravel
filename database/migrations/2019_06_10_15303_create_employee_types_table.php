@@ -17,8 +17,8 @@ class CreateEmployeeTypesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->text('description');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 

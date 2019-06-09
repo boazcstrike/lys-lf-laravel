@@ -21,8 +21,8 @@ class CreateEmployeesTable extends Migration
             $table->string('position');
             $table->string('phone_number');
             $table->unsignedBigInteger('employee_type_id');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
