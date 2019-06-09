@@ -16,16 +16,15 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('subtitle')->nullable();
-            $table->string('cover_photo')->nullable();
+            $table->string('subtitle');
             $table->text('content');
-            $table->bigInteger('category_id')->unsigned()->nullable();
-            $table->foreign('category_id')->references('id')->on('article_categories')->onDelete('set null');
-            $table->bigInteger('created_by')->unsigned()->nullable();
-            $table->foreign('created_by')->references('id')->on('users')->onDelete('set null');
-
-            $table->timestamps();
-            $table->softDeletes();
+            $table->string('background_url');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 

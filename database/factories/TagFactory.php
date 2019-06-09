@@ -1,6 +1,6 @@
 <?php
 
-use App\User;
+use App\Tag;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 use Carbon\Carbon;
@@ -16,14 +16,8 @@ use Carbon\Carbon;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(Tag::class, function (Faker $faker) {
     return [
-        'name' => $faker->name(),
-        'email' => $faker->sentence(),
-        'email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
-        'admin' => (bool)random_int(0, 1),
-        'picture_url' => $faker->sentence(),
-        'password' => $faker->sentence(),
-        'remember_token' => $faker->sentence()
+        'name' => $faker->name()
     ];
 });

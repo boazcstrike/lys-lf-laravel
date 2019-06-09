@@ -17,18 +17,12 @@ class CreateEmployeesTable extends Migration
             $table->bigIncrements('id');
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('phoneNumber');
             $table->string('email');
-            $table->string('picture_url');
-            $table->bigInteger('type')->unsigned()->nullable();
-            $table->foreign('type')
-            ->references('id')->on('employee_types')->onDelete('set null');
-            $table->string('position_label');
-            $table->bigInteger('created_by')->unsigned()->nullable();
-            $table->foreign('created_by')
-            ->references('id')->on('users')->onDelete('set null');
-            $table->timestamps();
-            $table->softDeletes();
+            $table->string('position');
+            $table->string('phone_number');
+            $table->unsignedBigInteger('employee_type_id');
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 

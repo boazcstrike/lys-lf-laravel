@@ -53070,8 +53070,8 @@ component.options.__file = "resources/js/views/Team.vue"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\boazs\webdev\lyf-lf\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\boazs\webdev\lyf-lf\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\webdev\lys-lf\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\webdev\lys-lf\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
