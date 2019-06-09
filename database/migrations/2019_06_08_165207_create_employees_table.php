@@ -19,6 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('lastname');
             $table->string('phoneNumber');
             $table->string('email');
+            $table->string('picture_url');
             $table->bigInteger('type')->unsigned()->nullable();
             $table->foreign('type')
             ->references('id')->on('employee_types')->onDelete('set null');

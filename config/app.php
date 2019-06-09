@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'LYS-LF'),
+    'name' => env('APP_NAME', 'Lim & Yutatco-Sze Law Firm'),
 
     /*
     |--------------------------------------------------------------------------
