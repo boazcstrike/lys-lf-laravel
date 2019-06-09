@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "admin-lte": "^2.4.10",
         "vue-router": "^3.0.6",
         "vuetify": "^1.5.14"
     }

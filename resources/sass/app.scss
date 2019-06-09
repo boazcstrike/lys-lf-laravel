@@ -12,6 +12,12 @@
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
 
+// Admin LTE
+@import '~admin-lte/dist/css/AdminLTE.css';
+@import '~admin-lte/dist/css/skins/_all-skins.css';
 
 // etc
 @import 'guest.scss';
+@import 'admin.scss';
+
+//
