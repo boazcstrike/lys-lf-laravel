@@ -7,12 +7,12 @@
             <div class="content-container">
                 <div class="practice-col">
                     <PracticeComponent practiceName="Corporate" icon="briefcase"/>
-                    <PracticeComponent practiceName="Labor" />
-                    <PracticeComponent practiceName="Tax" />
+                    <PracticeComponent practiceName="Labor" icon="wrench"/>
+                    <PracticeComponent practiceName="Tax" icon="money-check-alt"/>
                 </div>
                 <div class="practice-col">
-                    <PracticeComponent practiceName="Intellectual Property" />
-                    <PracticeComponent practiceName="Civil and Criminal Litigation" />
+                    <PracticeComponent practiceName="Intellectual Property" icon="copyright"/>
+                    <PracticeComponent practiceName="Civil and Criminal Litigation" icon="user-friends"/>
                 </div>
             </div>
         </div>
