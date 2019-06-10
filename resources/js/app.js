@@ -8,6 +8,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 import routes from './routes'
 import adminRoutes from './adminRoutes'
+import topnav from './components/TopNav'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,9 @@ const adminRouter = new VueRouter({
 
 const app = new Vue({
     el: '#app',
+    components: {
+        topnav
+    },
     router,
 })
 
@@ -36,3 +40,10 @@ const adminApp = new Vue({
     el: '#admin',
     adminRouter,
 })
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".lys-nav");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
