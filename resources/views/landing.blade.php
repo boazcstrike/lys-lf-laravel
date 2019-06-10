@@ -3,19 +3,9 @@
 @section('content')
 
 <div class="landing" id="app">
-    <nav class="lys-nav">
-        <div class="container">
-            <router-link class="nav-links logo-container" to="/">
-                <img class="logo" src="{{ asset('images/lys-logo.png') }}">
-            </router-link>
-            
-            <router-link class="nav-links spacing" to="/practice">Practice Areas</router-link>
-            <router-link class="nav-links" to="/profile">Profile</router-link>
-            <router-link class="nav-links" to="/articles">News</router-link>
-            <router-link class="nav-links" to="/team">Our Team</router-link>
-            <router-link class="nav-links" to="/contact">Contact</router-link>
-        </div>
-    </nav>
+    <topnav></topnav>
+
+    <div class="topNav-spacing"></div>
     
     <router-view></router-view>
 
