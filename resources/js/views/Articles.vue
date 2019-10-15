@@ -1,15 +1,13 @@
 <template>
-    <div>
-        <h1>this is the articles view</h1>
+    <div class="content">
+        <div class="articles">
+            <h1>Article</h1>  
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

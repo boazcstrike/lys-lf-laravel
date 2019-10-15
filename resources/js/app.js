@@ -7,7 +7,7 @@ require('admin-lte');
 import Vue from 'vue'
 import VueRouter from 'vue-router';
 import routes from './routes'
-import adminRoutes from './adminRoutes'
+// import adminRoutes from './adminRoutes'
 import topnav from './components/TopNav'
 
 Vue.use(VueRouter)
@@ -16,9 +16,9 @@ const router = new VueRouter({
     routes
 })
 
-const adminRouter = new VueRouter({
-    adminRoutes
-})
+// const adminRouter = new VueRouter({
+//     adminRoutes
+// })
 
 // Vue.component('landing-component', require('./views/Landing.vue').default);
 
@@ -36,14 +36,9 @@ const app = new Vue({
     router,
 })
 
-const adminApp = new Vue({
-    el: '#admin',
-    adminRouter,
-})
-
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $(".lys-nav");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-});
+// $(function () {
+//     $(document).scroll(function () {
+//         var $nav = $(".lys-nav");
+//         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//     });
+// });
